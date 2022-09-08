@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<h1><center>Welcome to Rhyme's python server hosting microbit data!</center></h1>
+		
+		<style>
+			.myDiv {
+			border: 5px outset black;
+			background-color: lightgreen;
+			text-align: center;
+		}
+		</style>
+		
+		
+		<style>
+			.centreDiv {
+			border: 2px outset black;
+			background-color: gray;
+			text-align: center;
+			}
+		</style>
+		
+		<style>
+			.controls {
+			border: 2px outset grey;
+			background-color: white;
+			text-align: center;
+			}
+		</style>
+		
+	</head>
+	
+	
+	
+	
+	<body>
+		
+			<div class="myDiv"> <br/><br/>
+				<p> 
+					Here we are hosting data collected regularly by a microbit and displaying them in real time.<br/><br/><br/> 
+				</p>
+			</div>
+			
+			<div class="centreDiv">
+				<p> 		<br/><br/><br/> 
+					This is a dataset of the light level, collected on regular basis by the microbit<br/><br/><br/> 
+				</p>
+				<a href="light_data.csv" download="light"> Download light dataset below <br/><br/>
+					<img src="resources/down.png" alt="W3" width="104" height="100">
+				</a>
+				
+				<form action="resources/light.html"> <br/><br/><br/><br/>
+					<input type="submit" value="View the latest light levels dataset table" />
+				</form>
+			</div>
+			
+			<div class="centreDiv">		
+				<p> 		<br/><br/><br/> 
+					This is a dataset of the temperature level, collected on regular basis by the microbit<br/><br/><br/> 
+				</p>
+				<a href="tempe_data.csv" download="tempe"> Download temperature dataset below <br/><br/>
+					<img src="resources/down.png" alt="W3" width="104" height="100">
+				</a>
+			
+				<form action="resources/tempe.html"> <br/><br/><br/><br/>
+					<input type="submit" value="View the latest temperature dataset table" />
+				</form>
+			</div>
+			
+			<div class="controls">		
+				<p> 		<br/><br/><br/> 
+					Control your microbit here<br/><br/><br/> 
+				</p>
+			
+				<a href="http://localhost:8000/resetMB"> <br/><br/>Reset your Microbit here!</a>
+				
+				<a href="http://localhost:8000/stopMB"> <br/><br/>Stop your Microbit here!</a>
+				
+				<a href="http://localhost:8000/restartMB"> <br/><br/>Restart your Microbit here!<br/><br/</a>
+				
+				
+			</div>
+			
+		
+		
+		<p style="text-align:center;">
+			Thank you for visiting!
+		</p>
+
+
+
+	</body>
+</html>\
